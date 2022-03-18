@@ -14,33 +14,35 @@ while chances >= 0:
             press <3> to deposit amount
             press <4> to return card  
         ''')
-        option = int(input("What would you like to choose?\n"))
-        if option == 1:
-            print(f"Your balance is ${balance}")
-            restart = input("would you like to go back? \nEnter 'yes' or 'no': ").upper()
-            if restart in ('NO'):
-                print("Thank You")
-                break
-        elif option == 2:
-            withdrawl = float(input("Enter the amount you want to withdraw($100 | $200 | $500 |$1000 | $2000|):"))
-            if withdrawl == (100, 200, 500, 1000, 2000):
-                balance = balance - withdrawl
-                print(f"Your balance is now ${balance}")
+            option = int(input("What would you like to choose?\n"))
+            if option == 1:
+                print(f"Your balance is ${balance}")
                 restart = input("would you like to go back? \nEnter 'yes' or 'no': ").upper()
                 if restart in ('NO'):
                     print("Thank You")
                     break
+            elif option == 2:
+                withdrawl = float(input("Enter the amount you want to withdraw($100 | $200 | $500 |$1000 | $2000|):"))
+                if withdrawl == (100, 200, 500, 1000, 2000):
+                    balance = balance - withdrawl
+                    print(f"Your balance is now ${balance}")
+                    restart = input("would you like to go back? \nEnter 'yes' or 'no': ").upper()
+                    if restart in ('NO'):
+                        print("Thank You")
+                        break
 
-            elif withdrawl != (100, 200, 500, 1000, 2000):
-                print(f"Sorry,  you cannot withdraw {withdrawl} \nPlease, Enter the mentioned amount to withdraw..")
-        elif option == 3:
-            deposit = float(input("Enter the amount you want to deposit: "))
-            balance += deposit
-            print(f"your new balance is ${balance}")
-            restart = input("would you like to go back? \nEnter 'yes' or 'no': ").upper()
-            if restart in ('NO'):
-                print("Thank You")
-                break
+                elif withdrawl != (100, 200, 500, 1000, 2000):
+                    print(f"Sorry,  you cannot withdraw {withdrawl} \nPlease, Enter the mentioned amount to withdraw..")
+            elif option == 3:
+                deposit = float(input("Enter the amount you want to deposit: "))
+                balance += deposit
+                print(f"your new balance is ${balance}")
+                restart = input("would you like to go back? \nEnter 'yes' or 'no': ").upper()
+                if restart in ('NO'):
+                    print("Thank You")
+                    break
+            elif option == 4:
+                print("Thank You...\n you will get your card in few sec...")
     else:
         print('''sorry, Password is incorrect.... 
                  you cannot access..

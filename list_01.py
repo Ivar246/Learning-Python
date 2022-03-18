@@ -8,7 +8,7 @@
 #.reverse()               -> sort in reverse order
 #len()                    ->this print the number of element of list     
 #.copy()                  ->it copy the element in another list
-#.count(element)          ->cout the frequency (no of times of repeatition)
+#.count(element)          ->count the frequency (no of times of repeatition)
 
 mark = [50, 20, 60, 80, 70, 63, 14]
 print(mark)
