@@ -17,6 +17,6 @@ if word in sentence:
     
     print('new sentence:\n', new_sentence)
 else:
-    print(f'{word} word is not in sentence')      
+    print(f'{word} word is not in sentence')
 
 
