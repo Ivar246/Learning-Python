@@ -1,4 +1,4 @@
-Ask two question " what is your name" and "what is your favourite colour"
+# Ask two question " what is your name" and "what is your favourite colour"
 name = input("What is your name:")
 color = input("what is your favorite color:")
 

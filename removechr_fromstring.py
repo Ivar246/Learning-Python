@@ -4,5 +4,5 @@ new_str = ''
 #     if char != 's':
 #         new_str += char
 
-new_str = string.replace(" ", ',')
-print(new_str)
+# new_str = string.replace(" ", ',')
+# print(new_str)
