@@ -67,8 +67,11 @@ board= [[' ' for i in range(8)] for i in range(8)]
 #         print('*', end='')
 #     print()
     
-nums = [1, 2, 2, 4, 5, 8, 8]
-nums.sort(reverse=True)
-print(nums)
+# nums = [1, 2, 2, 4, 5, 8, 8]
+# nums.sort(reverse=True)
+# print(nums)
         
-        
+string = "g fmnc wms bgblr rpylqjyrc gr zw fylb. rfyrq ufyr amknsrcpq ypc dmp. bmgle gr gl zw fylb gq glcddgagclr ylb rfyr'q ufw rfgq rcvr gq qm jmle. sqgle qrpgle.kyicrpylq() gq pcamkkclbcb. lmu ynnjw ml rfc spj."
+
+# for i in string:    
+print(27//2)
